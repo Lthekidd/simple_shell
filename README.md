@@ -11,6 +11,7 @@
 <li>Envp – character array of environmental variables</li>	
 <li>Our main function is going to run all the major functions 1-3 above</li> </ul>
 ### Read user input (shell_read())
+<ul>
 •	Determine whether the shell is in interactive or non –interactive mode using isatty()
 •	Use the getline() function to take in input
 •	Check for errors and edge cases
@@ -24,7 +25,7 @@
 •	Create a child process to execute the program from and make parent wait for the child process
 •	Use the execve function to execute arguments from the strtok function
 •	Free any memory as necessary to prevent memory leaks
-
+</ul>
 ### List of allowed functions and system calls
 <ul>
 	access (man 2 access)
