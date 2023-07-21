@@ -5,11 +5,11 @@
 3.	Execute 
 4.	Loop 
 ### Our entry point to the Simple Shell is going to be our main function which takes in the following:
-<ul>
+
   <li>Argc – number of arguments</li>
 <li> Argv – character array of arguments</li>
 <li>Envp – character array of environmental variables</li>	
-<li>Our main function is going to run all the major functions 1-3 above</li> </ul>
+<li>Our main function is going to run all the major functions 1-3 above</li>
 ### Read user input (shell_read())
 <ul>
 <li>•	Determine whether the shell is in interactive or non –interactive mode using isatty()</li>
