@@ -40,7 +40,7 @@ int _strlen(const char *s)
 
 /**
  * _strcmp - compares two strings.
- * @s1: the first string 
+ * @s1: the first string
  * @s2: the second string
  *
  * Return: negative if s1 < s2, positive if s1 > s2, zero if s1 == s2

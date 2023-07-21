@@ -26,10 +26,10 @@
 
 ### Execute (shell_execute())
 
-•	Determine if the command from the strtok function are in-built or files  
-•	Create a child process to execute the program from and make parent wait for the child process  
-•	Use the execve function to execute arguments from the strtok function  
-•	Free any memory as necessary to prevent memory leaks  
+<li>	Determine if the command from the strtok function are in-built or files  </li>
+<li>	Create a child process to execute the program from and make parent wait for the child process </li> 
+<li>	Use the execve function to execute arguments from the strtok function  </li>
+<li>	Free any memory as necessary to prevent memory leaks  </li>
 
 ### List of allowed functions and system calls
 	access (man 2 access) \
