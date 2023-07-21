@@ -12,10 +12,10 @@
 <li>Our main function is going to run all the major functions 1-3 above</li> </ul>
 ### Read user input (shell_read())
 <ul>
-•	Determine whether the shell is in interactive or non –interactive mode using isatty()
-•	Use the getline() function to take in input
-•	Check for errors and edge cases
-•	Free any memory as necessary to prevent memory leaks
+<li>•	Determine whether the shell is in interactive or non –interactive mode using isatty()</li>
+<li>•	Use the getline() function to take in input</li>
+<li>•	Check for errors and edge cases </li>
+<li>•	Free any memory as necessary to prevent memory leaks </li>
 </ul>
 ### Parse (shell_parse())
 <ul>
