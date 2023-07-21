@@ -24,7 +24,9 @@
 •	Create a child process to execute the program from and make parent wait for the child process
 •	Use the execve function to execute arguments from the strtok function
 •	Free any memory as necessary to prevent memory leaks
+
 ### List of allowed functions and system calls
+<ul>
 	access (man 2 access)
 	chdir (man 2 chdir)
 	close (man 2 close)
@@ -56,3 +58,4 @@
 	wait3 (man 2 wait3)
 	wait4 (man 2 wait4)
 	write (man 2 write)
+</ul>
