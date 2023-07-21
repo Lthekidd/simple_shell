@@ -6,32 +6,32 @@
 4.	Loop 
 ### Our entry point to the Simple Shell is going to be our main function which takes in the following:
 
-  <li>Argc – number of arguments</li>
+<li>Argc – number of arguments</li>
 <li> Argv – character array of arguments</li>
 <li>Envp – character array of environmental variables</li>	
 <li>Our main function is going to run all the major functions 1-3 above</li>
+
 ### Read user input (shell_read())
-<ul>
-<li>•	Determine whether the shell is in interactive or non –interactive mode using isatty()</li>
-<li>•	Use the getline() function to take in input</li>
-<li>•	Check for errors and edge cases </li>
-<li>•	Free any memory as necessary to prevent memory leaks </li>
-</ul>
+
+<li>Determine whether the shell is in interactive or non –interactive mode using isatty()</li>
+<li>Use the getline() function to take in input</li>
+<li>Check for errors and edge cases </li>
+<li>Free any memory as necessary to prevent memory leaks </li>
+
 ### Parse (shell_parse())
-<ul>
-•	Use the strtok() to split the input from the getline() function and get the command from the arguments 
-•	Check for errors and edge cases 
-•	Free any memory as necessary to prevent memory leaks 
-</ul>
+
+<li>Use the strtok() to split the input from the getline() function and get the command from the arguments </li>
+<li>Check for errors and edge cases </li>
+<li>Free any memory as necessary to prevent memory leaks </li>
+
 ### Execute (shell_execute())
-<ul>
+
 •	Determine if the command from the strtok function are in-built or files  
 •	Create a child process to execute the program from and make parent wait for the child process  
 •	Use the execve function to execute arguments from the strtok function  
 •	Free any memory as necessary to prevent memory leaks  
-</ul>
+
 ### List of allowed functions and system calls
-<ul>
 	access (man 2 access) \
 	chdir (man 2 chdir)  \
 	close (man 2 close)  \
@@ -63,4 +63,3 @@
 	wait3 (man 2 wait3)  \
 	wait4 (man 2 wait4)  \
 	write (man 2 write)  \
-</ul>
