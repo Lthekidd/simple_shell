@@ -16,11 +16,15 @@
 •	Use the getline() function to take in input
 •	Check for errors and edge cases
 •	Free any memory as necessary to prevent memory leaks
+</ul>
 ### Parse (shell_parse())
+<ul>
 •	Use the strtok() to split the input from the getline() function and get the command from the arguments
 •	Check for errors and edge cases
 •	Free any memory as necessary to prevent memory leaks
+</ul>
 ### Execute (shell_execute())
+<ul>
 •	Determine if the command from the strtok function are in-built or files
 •	Create a child process to execute the program from and make parent wait for the child process
 •	Use the execve function to execute arguments from the strtok function
