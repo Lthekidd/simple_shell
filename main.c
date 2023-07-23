@@ -16,6 +16,7 @@ int main(int argc,char **argv, char **envp)
         while (1)
         {
             _putchar('$');
+	    _putchar(' ');
             input = shell_read();
             if (input == NULL)
                 perror("No command received");
