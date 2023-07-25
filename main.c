@@ -35,7 +35,11 @@ int main(int argc,char **argv, char **envp)
     {
 	    /**non-interactive shell*/
 	    input = argv[1];
+	    if (!input)
+		    perror("No input");
 	    string_tokens = shell_parse(input);
+	    if (!string_tokens)
+		    perror("Tokens");
 	    shell_execute(string_tokens, argc, argv, envp);
     }
     free(input);

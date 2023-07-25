@@ -24,7 +24,8 @@ int find_cmd(char *cmd, char **argv)
     strcat(full_path, "/");
     strcat(full_path, cmd);
 
-    if (access(full_path, X_OK) == 0) {
+    if (access(full_path, X_OK) == 0) 
+    {
       is_found = 1;
       break;
     }
@@ -32,7 +33,5 @@ int find_cmd(char *cmd, char **argv)
     free(full_path);
     path = strtok(NULL, ":");
   }
-
   return is_found;
 }
-

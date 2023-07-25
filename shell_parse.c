@@ -12,7 +12,7 @@ char **shell_parse(char *input)
     char *delim = " \t\r\n";
     char *token;
     int len = 0;
-    int size = 20;/*Initial size for input*/
+    int size = 30;/*Initial size for input*/
     char **tokens = malloc(size * sizeof(char*));
 
     if (!tokens)
