@@ -23,7 +23,9 @@ char **shell_parse(char *input)
 
     /*check to see if input is not null*/
     if (input != NULL)
-        token = strtok(input,delim);
+	token = strtok(input,delim);
+
+
     while(token != NULL)
     {
         tokens[len] = token;
@@ -33,6 +35,7 @@ char **shell_parse(char *input)
         {
             /*allocate more memory*/
             tokens = realloc(tokens, len * sizeof(char*));
+	    len++;
             if (!tokens)
             {
                 perror("An error occured");

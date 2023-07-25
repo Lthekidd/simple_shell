@@ -15,23 +15,31 @@ int main(int argc,char **argv, char **envp)
         /**interactive shell*/
         while (1)
         {
-            _putchar('$');
-	    _putchar(' ');
+            mputs("$ ");
             input = shell_read();
             if (input == NULL)
-                perror("No command received");
+	    {
+		 free(input);
+		 perror("No command received");
+	    }
             string_tokens = shell_parse(input);
             if (string_tokens == NULL)
-                perror("Parse error");
+	    {
+		    free(string_tokens);
+		    perror("Parse error");
+	    }
             shell_execute(string_tokens, argc, argv, envp);
-        }
-        free(input);
-        free(string_tokens);
+        }     
     }
     else
     {
-            /**non-interactive shell*/
+	    /**non-interactive shell*/
+	    input = argv[1];
+	    string_tokens = shell_parse(input);
+	    shell_execute(string_tokens, argc, argv, envp);
     }
+    free(input);
+    free(string_tokens);
     return 0;
 }
 
