@@ -2,7 +2,7 @@
 
 char *_strcpy(char *dest, const char *src);
 int _strlen(const char *s);
-int _strcmp(char *s1, char *s2);
+/**int _strcmp(char *s1, char *s2);**/
 
 /**
  * _strcpy - Copies the string.
