@@ -1,7 +1,5 @@
 #include "shell.h"
 
-char *_strcpy(char *dest, const char *src);
-int _strlen(const char *s);
 /**int _strcmp(char *s1, char *s2);**/
 
 /**
@@ -45,7 +43,7 @@ int _strlen(const char *s)
  *
  * Return: negative if s1 < s2, positive if s1 > s2, zero if s1 == s2
  */
-/**int _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	while (*s1 && *s2)
 	{
@@ -58,5 +56,21 @@ int _strlen(const char *s)
 		return (0);
 	else
 		return (*s1 < *s2 ? -1 : 1);
-}**/
+}
+/**
+* _strcat - concatenates two strings
+* @value1: the destination buffer
+* @src: the source buffer
+* Return: pointer to destination buffer
+*/
+char *_strcat(char *value1, char *src)
+{
+	char *result = value1;
 
+	while (*value1)
+		value1++;
+	while (*src)
+		*value1++ = *src++;
+	*value1 = *src;
+	return (result);
+}

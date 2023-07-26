@@ -5,13 +5,13 @@
 #include <stdlib.h>
 #include <unistd.h>
 /**
-* getfunction - Struct to represent a function pointer
+* getfunction: Struct to represent a function pointer
 *for our built-in functions
 */
 typedef struct getfunction
 {
-        char *name;
-        void (*getfunction)(char **cmd, int argc, char **envp);
+	char *name;
+	void (*getfunction)(char **cmd, int argc, char **envp);
 } getfunction;
 
 /**main shell functions*/
@@ -23,11 +23,15 @@ void shell_execute(char **cmd, int argc, char **argv, char **envp);
 char *_strcpy(char *dest, const char *src);
 int _strcmp(char *s1, char *s2);**/
 int find_cmd(char *cmd, char **argv);
+void *_realloc(void *pointer, unsigned int new,unsigned int old);
 
 /**our own implementation of std library functions*/
 int _putchar(char c);
-int _strcmp(const char *string1, const char *string2);
 void mputs(const char *to_ouput);
+int _strcmp(char *s1, char *s2);
+char *_strcat(char *value1, char *src);
+char *_strcpy(char *dest, const char *src);
+int _strlen(const char *s);
 
 /**Shell builtin functions*/
 void shell_exit(char **cmd, int argc, char **envp);
