@@ -19,9 +19,9 @@ char *shell_read(void);
 char **shell_parse(char *input);
 void shell_execute(char **cmd, int argc, char **argv, char **envp);
 /** string functions - add more once needed */
-int _strlen(const char *s);
+/**int _strlen(const char *s);
 char *_strcpy(char *dest, const char *src);
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2);**/
 int find_cmd(char *cmd, char **argv);
 
 /**our own implementation of std library functions*/
