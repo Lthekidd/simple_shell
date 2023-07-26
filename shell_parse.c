@@ -22,7 +22,7 @@ char **shell_parse(char *input)
 
 	/*check to see if input is not null*/
 	if (input != NULL)
-		token = strtok(input, delim);
+		token = _strtok(input, delim);
 
 
 	while (token != NULL)
