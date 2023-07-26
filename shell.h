@@ -26,7 +26,7 @@ int find_cmd(char *cmd, char **argv);
 
 /**our own implementation of std library functions*/
 int _putchar(char c);
-int _strcmp(const char *string1, const char *string2);
+/**int _strcmp(const char *string1, const char *string2);**/
 void mputs(const char *to_ouput);
 
 /**Shell builtin functions*/
