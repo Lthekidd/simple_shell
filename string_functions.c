@@ -58,5 +58,5 @@ int _strlen(const char *s)
 		return (0);
 	else
 		return (*s1 < *s2 ? -1 : 1);
-}/**
+}**/
 
