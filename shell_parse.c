@@ -33,7 +33,7 @@ char **shell_parse(char *input)
 		if (len >= size)/*not enough memory*/
 		{
 			/*allocate more memory*/
-			tokens = _realloc(tokens,0, len * sizeof(char *));
+			tokens = _realloc(tokens, 0, len * sizeof(char *));
 				len++;
 			if (!tokens)
 			{

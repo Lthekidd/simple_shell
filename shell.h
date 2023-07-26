@@ -23,7 +23,7 @@ void shell_execute(char **cmd, int argc, char **argv, char **envp);
 char *_strcpy(char *dest, const char *src);
 int _strcmp(char *s1, char *s2);**/
 int find_cmd(char *cmd, char **argv);
-void *_realloc(void *pointer, unsigned int new,unsigned int old);
+void *_realloc(void *pointer, unsigned int new, unsigned int old);
 
 /**our own implementation of std library functions*/
 int _putchar(char c);
